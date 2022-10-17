@@ -40,9 +40,6 @@ app.put("/repositories/:id", (request, response) => {
   repository.title = title;
   repository.url = url;
   repository.techs = techs;
-  
-  //const repository = { ...repositories[repositoryIndex], ...updatedRepository };
-  //repositories[repositoryIndex] = repository;
 
   return response.json(repository);
 });
